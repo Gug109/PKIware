@@ -1,0 +1,219 @@
+.secondary-section {
+    padding: 12px 28px;
+    margin-left: 290px;
+
+
+    &__req-count {
+        color: var(--bold-gray);
+        margin-bottom: 10px;
+    }
+
+    &__req-count i {
+        margin: 0 20px;
+    }
+
+    &__angel-icon {
+        position: absolute;
+        color: var(--bold-gray);
+        right: 20px;
+    }
+
+    &__user-info-main-block {
+        color: var(--black);
+        background-color: var(--white);
+        padding: 14px 26px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+    }
+
+    &__user-infos-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__hr {
+        margin-top: 20px;
+    }
+
+    &__show-user-info-title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    &__show-user-name {
+        color: var(--bold-gray);
+    }
+
+    &__show-user-infos-main-block {
+        display: none;
+    }
+
+    &__show-user-email-block {
+        margin-left: 100px;
+    }
+
+    &__show-user-link {
+        color: var(--brand-color);
+    }
+
+    &__show-user-lastname {
+        color: var(--bold-gray);
+    }
+
+    &__show-user-email {
+        color: var(--bold-gray);
+    }
+
+    &__show-user-phone {
+        color: var(--bold-gray);
+    }
+
+    &__show-user-infos {
+        justify-content: space-between;
+    }
+
+    &__user-info-block {
+        font-size: 18px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__revoce-inp {
+        padding: 12px 24px;
+        border: 1px solid var(--gray);
+        border-radius: 8px;
+    }
+
+    &__inp-descrip {
+        margin-bottom: 4px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    &__select-inp {
+        padding: 12px 24px;
+        border: 1px solid var(--gray);
+        border-radius: 8px;
+        display: block;
+        margin-bottom: 30px;
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    &__select-inp-block {
+        width: 400px;
+    }
+
+    .helper {
+        margin-bottom: 10px;
+    }
+
+    &__actions {
+        background-color: var(--white);
+        padding: 14px 26px;
+        border-radius: 8px;
+    }
+
+    &__pc-inp {
+        padding: 12px 24px;
+        border: 1px solid var(--gray);
+        border-radius: 8px;
+        margin-top: 14px;
+        display: block;
+    }
+
+    &__actions-first-list {
+        margin-right: 50px;
+    }
+
+    &__actions-title {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    &__actions-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__download-btn {
+        padding: 14px 20px;
+        margin-left: 10px;
+        font-weight: 700;
+        background-color: var(--white);
+        color: var(--black);
+        border: 1px solid var(--bold-gray);
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+
+    &__renew-btn {
+        padding: 14px 40px;
+        background-color: var(--brand-color);
+        color: var(--white);
+        border: none;
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+    
+    &__user-info-btns-block {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 24px;
+        color: var(--black);
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    &__title-right-text {
+        color: var(--bold-gray);
+        font-size: 14px;
+    }
+
+    &__req-detalis-ul {
+        margin-top: 20px;
+        background-color: var(--white);
+        padding: 14px 26px;
+        border-radius: 8px;
+    }
+
+    &__show-user-infos {
+        display: flex;
+    }
+
+    &__req-detalis-hr {
+        border: 0.5px solid var(--gray);
+    }
+
+    &__req-detalis-title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__req-detalis-num {
+        color: var(--bold-gray);
+        margin-right: 16px;
+    }
+
+    &__req-detalis-list {
+        color: var(--bold-gray);
+        margin: 16px 0;
+        display: flex;
+    }
+
+    &__req-detalis-answer {
+        color: var(--black);
+        margin-left: 150px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,101 @@
+.renewal {
+    margin-left: 330px;
+    border-radius: 16px;
+    width: 600px;
+    display: none;
+    background-color: var(--white);
+    height: 350px;
+    // position: fixed;
+
+    &__renew-block {
+        padding: 24px 48px;
+    }
+
+    &__texts-inp-title {
+        font-size: 13px;
+        font-weight: 500;
+       margin-bottom: 10px;
+    }
+
+    &__texts-inp {
+        padding: 12px 24px;
+        width: 100%;
+        border: 1px solid var(--gray);
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    &__cancel-btn {
+        border-radius: 10px;
+        border: 1px solid var(--gray);
+        color: var(--black);
+        background-color: var(--white);
+        padding: 14px 34px;
+    }
+
+    &__btns-block {
+        display: flex;
+        justify-self: end;
+    }
+
+    &__renew-btn {
+        border-radius: 10px;
+        border: none;
+        color: var(--white);
+        background-color: var(--brand-color);
+        margin-left: 20px;
+        padding: 14px 34px;
+    }
+
+    &__radio {
+        margin-bottom: 10px;
+    }
+ 
+    &__texts-inp-block {
+        width: 450px;
+        margin-bottom: 40px;
+    }
+      
+    &__radio-title {
+        margin-left: 10px;
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    &__radios-block {
+        margin: 20px 0;
+        align-items: center;
+    }
+
+    &__radios-title {
+        font-size: 12px;
+        color: var(--black);
+        font-weight: 500;
+    }
+
+    &__title-block {
+        background-color: var(--brand-color);
+        width: 550px;
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 24px;
+    }
+
+    &__title {
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    &__close-btn {
+        box-sizing: border-box;
+        border: none;
+        background-color: var(--brand-color);
+        color: var(--white);
+        font-size: 18px;
+    }
+}

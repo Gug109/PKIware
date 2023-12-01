@@ -1,0 +1,140 @@
+.section {
+    padding: 12px 28px;
+    margin-left: 290px;
+
+    &__nav-item-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    &__search-certificate-inp {
+        padding: 12px 24px;
+        border-radius: 8px;
+        border: 1px solid var(--gray);
+        width: 280px;
+        margin-left: 70px;
+        position: relative;
+    }
+
+    &__search-icon {
+        position: absolute;
+        right: 390px;
+        top: 192px;
+    }
+
+    &__down-angel {
+        color: var(--black);
+        position: absolute;
+        font-size: 18px;
+    }
+
+    &__status-inp {
+        padding: 12px;
+        border: 1px solid var(--gray);
+        border-radius: 8px;
+        width: 70px;
+        margin-bottom: 20px;
+    }
+
+    &__status-inp::placeholder {
+        color: var(--gray);
+    }
+
+    &__plus-icon {
+        margin-right: 4px;
+    }
+
+    &__request-btn {
+        border: none;
+        box-sizing: border-box;
+        background-color: var(--brand-color);
+        color: var(--white);
+        font-size: 16px;
+        border-radius: 8px;
+        padding: 14px 24px;
+    }
+
+    &__search-certificate-inp::placeholder {
+        color: var(--gray);
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__book-icon {
+        color: var(--brand-color);
+        font-size: 18px;
+    }
+
+    &__parent-row {
+        background-color: var(--white);
+    }
+
+    &__child-row {
+        background-color: var(--white);
+    }
+
+    &__child-row-block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__book-btn {
+        border: none;
+        display: block;
+        border-radius: 8px;
+        box-sizing: border-box;
+        background-color: var(--label);
+        padding: 8px 10px;
+    }
+
+    &__page {
+        border: none;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: var(--black);
+        padding: 12px 20px;
+        background-color: var(--white);
+    }
+
+    &__page:hover {
+        background-color: var(--brand-color);
+        color: var(--white);
+    }
+
+    &__child-row-link {
+        color: var(--brand-color);
+        margin-left: 6px;
+    }
+
+    &__pages-block {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__child-row-eye-icon {
+        color: var(--bold-gray)
+    }
+
+    &__table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 8px;
+    }
+
+    &__table td {
+        padding: 14px 20px;
+        border-radius: 12px;
+    }
+
+    &__chip {
+        background-color: var(--label);
+        color: var(--online-status-color);
+        display: inline-block;
+    }
+}

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title> PKIware </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./colors.css">
+    <link rel="stylesheet" href="./buttons.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="main-nav">
+        <ul class="main-nav__ul">
+            <img class="main-nav__logo-img" src="./images/logo.jpg" alt="">
+
+            <li class="main-nav__list">
+                <i class="fa-regular fa-circle-question main-nav__icon"></i>
+                <p class="main-nav__item-name"> Dashboard </p>
+
+                <i class="fa-solid fa-chevron-right main-nav__angel"></i>
+            </li>
+
+            <li class="main-nav__list">
+                <i class="fa-regular fa-user main-nav__icon"></i>
+                <p class="main-nav__item-name"> Self-Service </p>
+
+                <i class="fa-solid fa-chevron-right main-nav__angel"></i>
+            </li>
+
+            <li class="main-nav__list">
+                <i class="fa-solid fa-gear main-nav__icon"></i>
+                <p class="main-nav__item-name"> Managers </p>
+
+                <i class="fa-solid fa-chevron-right main-nav__angel"></i>
+            </li>
+
+            <li class="main-nav__list">
+                <i class="fa-solid fa-book main-nav__icon"></i>
+                <p class="main-nav__item-name"> Cert Admin </p>
+
+                <i class="fa-solid fa-chevron-right main-nav__angel"></i>
+            </li>
+
+            <li class="main-nav__list">
+                <i class="fa-solid fa-gear main-nav__icon"></i>
+                <p class="main-nav__item-name"> Compliance </p>
+
+                <i class="fa-solid fa-chevron-right main-nav__angel"></i>
+            </li>
+
+            <li class="main-nav__list">
+                <i class="fa-solid fa-key main-nav__icon"></i>
+                <p class="main-nav__item-name"> Key Ceremony </p>
+
+                <i class="fa-solid fa-chevron-right main-nav__angel"></i>
+            </li>
+
+            <li class="main-nav__list">
+                <i class="fa-solid fa-user-tie main-nav__icon"></i>
+                <p class="main-nav__item-name"> Administration </p>
+
+                <i class="fa-solid fa-chevron-right main-nav__angel"></i>
+            </li>
+
+            <li class="main-nav__list">
+                <i class="fa-solid fa-building-columns main-nav__icon"></i>
+                <p class="main-nav__item-name"> Governance </p>
+
+                <i class="fa-solid fa-chevron-right main-nav__angel"></i>
+            </li>
+
+            <li class="main-nav__list">
+                <i class="fa-solid fa-dollar-sign main-nav__icon"></i>
+                <p class="main-nav__item-name"> Finance </p>
+
+                <i class="fa-solid fa-chevron-right main-nav__angel"></i>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <main class="main">
+        <header class="header">
+            <ul class="header__main-ul">
+                <li class="header__list">
+                    <button class="header__btn">
+                        <i class="fa-regular fa-user header__icon"></i>
+                    </button>
+                    <p class="header__btn-name"> My Profile </p>
+                </li>
+
+                <li class="header__list">
+                    <button class="header__btn">
+                        <i class="fa-solid fa-user-group header__icon"></i>
+                    </button>
+                    <p class="header__btn-name"> My Team </p>
+                </li>
+
+                <li class="header__list">
+                    <button class="header__btn">
+                        <i class="fa-solid fa-magnifying-glass header__icon"></i>
+                    </button>
+                    <p class="header__btn-name"> Search & Subscribe </p>
+                </li>
+
+
+                <li class="header__user-info">
+                    <i class="fa-solid fa-bell header__bell"></i>
+
+                    <p class="header__user-name"> Stieve Wozniak <br>
+                        <span class="header__user-role"> Admin </span>
+                    </p>
+
+                    <img class="header__user-img" src="./images/user.svg" alt="">
+
+                <li class="header__list">
+                    <button class="header__question-btn">
+                        <i class="fa-solid fa-question header__icon"></i>
+                    </button>
+                    <p class="header__btn-name"> Help </p>
+                </li>
+                </li>
+            </ul>
+        </header>
+
+        <section class="section">
+            <ul class="section__main-ul">
+                <li class="section__nav-item-title">
+                    <h2 class="section__title"> My Certificate </h2>
+
+                    <input class="section__search-certificate-inp" type="text" placeholder="Search Certificate">
+
+                    <button class="section__request-btn"> Request
+                        Certificate </button>
+                </li>
+
+                <input class="section__status-inp" type="text" placeholder="Status">
+
+                <table class="section__table">
+                    <tr class="section__parent-row">
+                        <td>Request ID</td>
+                        <td>Serial No.</td>
+                        <td>Cert Subject Name</td>
+                        <td>Status</td>
+                        <td>Expiration Date </td>
+                        <td>Actions</td>
+                    </tr>
+
+                    <tr class="section__child-row">
+                        <td>
+                            <div class="section__child-row-block">
+                                <button class="section__book-btn"> <i class="fa-solid fa-book section__book-icon"></i>
+                                </button>
+
+                                <a class="section__child-row-link" href=""> #5036 </a>
+                            </div>
+                        </td>
+                        <td>0101@#201</td>
+                        <td>TestApir 18 - 5</td>
+                        <td class="section__chip">
+                            <div> Active </div>
+                        </td>
+                        <td>14/10/2023</td>
+                        <td><i class="fa-regular fa-eye section__child-row-eye-icon"></i></td>
+                    </tr>
+
+                    <tr class="section__child-row">
+                        <td>
+                            <div class="section__child-row-block">
+                                <button class="section__book-btn"> <i class="fa-solid fa-book section__book-icon"></i>
+                                </button>
+
+                                <a class="section__child-row-link" href=""> #5036 </a>
+                            </div>
+                        </td>
+                        <td>0101@#201</td>
+                        <td>TestApir 18 - 5</td>
+                        <td class="section__chip">
+                            <div> Active </div>
+                        </td>
+                        <td>14/10/2023</td>
+                        <td><i class="fa-regular fa-eye section__child-row-eye-icon"></i></td>
+                    </tr>
+
+                    <tr class="section__child-row">
+                        <td>
+                            <div class="section__child-row-block">
+                                <button class="section__book-btn"> <i class="fa-solid fa-book section__book-icon"></i>
+                                </button>
+
+                                <a class="section__child-row-link" href=""> #5036 </a>
+                            </div>
+                        </td>
+
+                        <td>0101@#201</td>
+                        <td>TestApir 18 - 5</td>
+                        <td class="section__chip">
+                            <div> Active </div>
+                        </td>
+                        <td>14/10/2023</td>
+                        <td><i class="fa-regular fa-eye section__child-row-eye-icon"></i></td>
+                    </tr>
+
+                    <tr class="section__child-row">
+                        <td>
+                            <div class="section__child-row-block">
+                                <button class="section__book-btn"> <i class="fa-solid fa-book section__book-icon"></i>
+                                </button>
+
+                                <a class="section__child-row-link" href=""> #5036 </a>
+                            </div>
+                        </td>
+                        <td>0101@#201</td>
+                        <td>TestApir 18 - 5</td>
+                        <td class="section__chip">
+                            <div> Active </div>
+                        </td>
+                        <td>14/10/2023</td>
+                        <td><i class="fa-regular fa-eye section__child-row-eye-icon"></i></td>
+                    </tr>
+
+                    <tr class="section__child-row">
+                        <td>
+                            <div class="section__child-row-block">
+                                <button class="section__book-btn"> <i class="fa-solid fa-book section__book-icon"></i>
+                                </button>
+
+                                <a class="section__child-row-link" href=""> #5036 </a>
+                            </div>
+                        </td>
+                        <td>0101@#201</td>
+                        <td>TestApir 18 - 5</td>
+                        <td class="section__chip">
+                            <div> Active </div>
+                        </td>
+                        <td>14/10/2023</td>
+                        <td><i class="fa-regular fa-eye section__child-row-eye-icon"></i></td>
+                    </tr>
+
+                    <tr class="section__child-row">
+                        <td>
+                            <div class="section__child-row-block">
+                                <button class="section__book-btn"> <i class="fa-solid fa-book section__book-icon"></i>
+                                </button>
+
+                                <a class="section__child-row-link" href=""> #5036 </a>
+                            </div>
+                        </td>
+                        <td>0101@#201</td>
+                        <td>TestApir 18 - 5</td>
+                        <td class="section__chip">
+                            <div> Active </div>
+                        </td>
+                        <td>14/10/2023</td>
+                        <td><i class="fa-regular fa-eye section__child-row-eye-icon"></i></td>
+                    </tr>
+
+                    <tr class="section__child-row">
+                        <td>
+                            <div class="section__child-row-block">
+                                <button class="section__book-btn"> <i class="fa-solid fa-book section__book-icon"></i>
+                                </button>
+
+                                <a class="section__child-row-link" href=""> #5036 </a>
+                            </div>
+                        </td>
+                        <td>0101@#201</td>
+                        <td>TestApir 18 - 5</td>
+                        <td class="section__chip">
+                            <div> Active </div>
+                        </td>
+                        <td>14/10/2023</td>
+                        <td><i class="fa-regular fa-eye section__child-row-eye-icon"></i></td>
+                    </tr>
+
+                    <tr class="section__child-row">
+                        <td>
+                            <div class="section__child-row-block">
+                                <button class="section__book-btn"> <i class="fa-solid fa-book section__book-icon"></i>
+                                </button>
+
+                                <a class="section__child-row-link" href=""> #5036 </a>
+                            </div>
+                        </td>
+                        <td>0101@#201</td>
+                        <td>TestApir 18 - 5</td>
+                        <td class="section__chip">
+                            <div> Active </div>
+                        </td>
+                        <td>14/10/2023</td>
+                        <td><i class="fa-regular fa-eye section__child-row-eye-icon"></i></td>
+                    </tr>
+
+                    <tr class="section__child-row">
+                        <td>
+                            <div class="section__child-row-block">
+                                <button class="section__book-btn"> <i class="fa-solid fa-book section__book-icon"></i>
+                                </button>
+
+                                <a class="section__child-row-link" href=""> #5036 </a>
+                            </div>
+                        </td>
+                        <td>0101@#201</td>
+                        <td>TestApir 18 - 5</td>
+                        <td class="section__chip">
+                            <div> Active </div>
+                        </td>
+                        <td>14/10/2023</td>
+                        <td><i class="fa-regular fa-eye section__child-row-eye-icon"></i></td>
+                    </tr>
+                </table>
+
+                <div class="section__pages-block">
+                    <button class="section__page"> 1 </button>
+                    <button class="section__page"> 2 </button>
+                    <button class="section__page"> 3 </button>
+                    <button class="section__page"> ... </button>
+                    <button class="section__page"> 36 </button>
+                </div>
+            </ul>
+        </section>
+
+
+
+
+        <section class="secondary-section">
+            <ul class="secondary-section__ul">
+                <div class="secondary-section__user-info-btns-block">
+                    <div class="secondary-section__title-block">
+                        <div class="secondary-section__req-count"> My Certificate Requests
+                            <i class="fa-solid fa-chevron-right"></i>
+                            CR - 4473
+                        </div>
+
+                        <h2 class="secondary-section__title">
+                            Certificate Detalis
+                            <span class="secondary-section__title-right-text">( CR - 4473 )</span>
+                        </h2>
+                    </div>
+
+                    <div class="secondary-section__btns-block">
+                        <button class="secondary-section__renew-btn"> Renew </button>
+                        <button class="secondary-section__download-btn"> Download Certificate </button>
+                    </div>
+                </div>
+
+                <div class="secondary-section__user-info-main-block">
+                    <div class="secondary-section__user-info-block">
+                        <h3 class="secondary-section__user-info-block-title">
+                            Show User Info
+                        </h3>
+                        <i class="fa-solid fa-angle-down secondary-section__angel-icon"></i>
+                    </div>
+
+                    <div class="secondary-section__show-user-infos-main-block">
+                        <hr class="secondary-section__hr">
+
+                        <div class="secondary-section__user-infos-block">
+                            <div>
+                                <h3 class="secondary-section__show-user-info-title">
+                                    Requester Detalis
+                                </h3>
+
+                                <ul class="secondary-section__show-user-infos">
+                                    <li>
+                                        <span class="secondary-section__show-user-name">
+                                            First Name : Stieve
+                                        </span>
+
+                                        <br>
+                                        <span class="secondary-section__show-user-lastname">
+                                            Last Name : Wozinak
+                                        </span>
+                                    </li>
+
+                                    <li class="secondary-section__show-user-email-block">
+                                        <span class="secondary-section__show-user-email">
+                                            Email : <a class="secondary-section__show-user-link" href="">
+                                                Wozinak@vgcit.com
+                                            </a>
+                                        </span>
+                                        <br>
+
+                                        <span class="secondary-section__show-user-phone">
+                                            Phone : <a class="secondary-section__show-user-link" href="">
+                                                9874563210
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div>
+                                <h3 class="secondary-section__show-user-info-title">
+                                    Manager Detalis
+                                </h3>
+                                <ul class="secondary-section__show-user-infos">
+                                    <li>
+                                        <span class="secondary-section__show-user-name">
+                                            First Name : vAdmin
+                                        </span>
+                                        <br>
+                                        <span class="secondary-section__show-user-lastname">
+                                            Last Name : Chukhadarian
+                                        </span>
+                                    </li>
+
+                                    <li class="secondary-section__show-user-email-block">
+                                        <span class="secondary-section__show-user-email">
+                                            Email : <a class="secondary-section__show-user-link" href="">
+                                                Vartanc@vgcit.com
+                                            </a>
+                                        </span>
+                                        <br>
+                                        <span class="secondary-section__show-user-phone">
+                                            Phone : <a class="secondary-section__show-user-link" href="">
+                                                8182229264
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <ul class="secondary-section__actions">
+                    <h3 class="secondary-section__actions-title"> Actions</h3>
+
+                    <hr class="secondary-section__action-hr">
+
+
+                    <ul class="secondary-section__actions-list">
+
+                        <li class="secondary-section__actions-first-list">
+                            <label class="secondary-section__inp-descrip" for="">Revocation reason </label>
+                            <div class="secondary-section__select-inp-block">
+                                <input class="secondary-section__select-inp" placeholder="Select Item" value="">
+                                </input>
+                            </div>
+                            <input class="secondary-section__revoce-inp" type="text" placeholder="Revoce Certificate">
+                        </li>
+
+                        <li class="secondary-section__actions-first-list">
+                            <label class="secondary-section__inp-descrip" for="">Password for private key</label>
+                            <div class="secondary-section__select-inp-block">
+                                <input class="secondary-section__select-inp helper" type="text"
+                                    placeholder="Enter the password" value="">
+                            </div>
+
+                            <label class="secondary-section__inp-descrip" for="">Private key format</label>
+
+                            <input class="secondary-section__radio-inp" name="x" type="radio"> <label
+                                class="secondary-section__inp-descrip" for="">.pfx</label>
+                            <input class="secondary-section__radio-inp" name="x" type="radio"> <label
+                                class="secondary-section__inp-descrip" for="">.pem</label>
+
+                            <input class="secondary-section__pc-inp" type="text" placeholder="PKCS12">
+
+                        </li>
+                    </ul>
+                </ul>
+
+                <ul class="secondary-section__req-detalis-ul">
+                    <h2 class="secondary-section__req-detalis-title">
+                        Ennrolment Request Detalis
+                    </h2>
+
+                    <hr class="secondary-section__req-detalis-hr">
+
+                    <ul class="secondary-section__req-detalis-list">
+                        <li class="secondary-section__req-detalis-num">
+                            2. Is this a new, Replacement or Transition certificate?
+                        </li>
+
+                        <li class="secondary-section__req-detalis-answer">
+                            New
+                        </li>
+                    </ul>
+
+                    <hr class="secondary-section__req-detalis-hr">
+
+                    <ul class="secondary-section__req-detalis-list">
+                        <li class="secondary-section__req-detalis-num">
+                            2. Is this a new, Replacement or Transition certificate?
+                        </li>
+
+                        <li class="secondary-section__req-detalis-answer">
+                            New
+                        </li>
+                    </ul>
+
+                    <hr class="secondary-section__req-detalis-hr">
+
+                    <ul class="secondary-section__req-detalis-list">
+                        <li class="secondary-section__req-detalis-num">
+                            2. Is this a new, Replacement or Transition certificate?
+                        </li>
+
+                        <li class="secondary-section__req-detalis-answer">
+                            New
+                        </li>
+                    </ul>
+
+                    <hr class="secondary-section__req-detalis-hr">
+
+                    <ul class="secondary-section__req-detalis-list">
+                        <li class="secondary-section__req-detalis-num">
+                            2. Is this a new, Replacement or Transition certificate?
+                        </li>
+
+                        <li class="secondary-section__req-detalis-answer">
+                            New
+                        </li>
+                    </ul>
+
+                    <hr class="secondary-section__req-detalis-hr">
+
+                    <ul class="secondary-section__req-detalis-list">
+                        <li class="secondary-section__req-detalis-num">
+                            2. Is this a new, Replacement or Transition certificate?
+                        </li>
+
+                        <li class="secondary-section__req-detalis-answer">
+                            New
+                        </li>
+                    </ul>
+
+                    <hr class="secondary-section__req-detalis-hr">
+
+                    <ul class="secondary-section__req-detalis-list">
+                        <li class="secondary-section__req-detalis-num">
+                            2. Is this a new, Replacement or Transition certificate?
+                        </li>
+
+                        <li class="secondary-section__req-detalis-answer">
+                            New
+                        </li>
+                    </ul>
+                </ul>
+        </section>
+
+
+        <section class="renewal">
+            <div class="renewal__title-block">
+                <h3 class="renewal__title">
+                    Renewal
+                </h3>
+                <button class="renewal__close-btn">
+                    <i class="fa-solid fa-xmark renewal__close-icon"></i>
+                </button>
+            </div>
+
+            <div class="renewal__renew-block">
+                <label class="renewal__radios-title" for="">Choose how you want to renew the Request </label> <br>
+
+                <div class="renewal__radios-block">
+                    <input class="renewal__radio" type="radio" name="x" id=""> <label class="renewal__radio-title"
+                        for="">Renew
+                        with same key</label>
+                    <br>
+                    <input class="renewal__radio" type="radio" name="x" id=""> <label class="renewal__radio-title"
+                        for="">Renew
+                        with new key</label>
+                </div>
+
+                <label class="renewal__texts-inp-title" for="">Password</label>
+                <br>
+
+                <div class="renewal__texts-inp-block">
+                <input class="renewal__texts-inp" type="text" name="" id="" placeholder="Enter text">
+            </div>
+
+                <div class="renewal__btns-block">
+                    <button class="renewal__cancel-btn">Cancel</button>
+                    <button class="renewal__renew-btn">Renew</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <hr class="footer__hr">
+
+            <div class="footer__texts-block">
+                <span class="footer__product-description">1.0.10 MG - This product is supported by Application Security
+                    Team @ 2023</span>
+
+                <span class="footer__user-active-info">Last account activity is 52min ago</span>
+            </div>
+        </footer>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

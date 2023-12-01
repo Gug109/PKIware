@@ -1,0 +1,58 @@
+.main-nav {
+    width: 280px;
+    position: fixed;
+    font-family: 'Kanit';
+
+    &__logo-img {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    &__ul {
+        background-color: var(--nav-bg);
+    }
+
+    &__angel {
+        color: var(--gray);
+        position: absolute;
+        right: 20px;
+    }
+    
+    
+    &__item-name {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: var(--gray);
+        margin-left: 16px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        padding: 19px 28px;
+        background-color: var(--nav-item-bg);
+        position: relative;
+        margin-bottom: 4px;
+    }
+
+    &__list:hover {
+        background-color: var(--brand-color);
+
+        .main-nav__icon {
+            color: var(--white);
+        }
+
+        .main-nav__item-name {
+            color: var(--white);
+        }
+
+        .main-nav__angel {
+            color: var(--white);
+        }
+    }
+
+    &__icon {
+        font-size: 22px;
+        color: var(--bold-gray);
+    }
+}
