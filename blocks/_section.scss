@@ -5,7 +5,7 @@
     &__nav-item-title {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 30px;
+        margin-bottom: 100px;
         margin-top: 30px;
     }
 
@@ -34,7 +34,10 @@
         padding: 12px;
         border: 1px solid var(--gray);
         border-radius: 8px;
-        width: 70px;
+        width: 100px;
+        position: absolute;
+        right: 30px;
+        top: 200px;
         margin-bottom: 20px;
     }
 
@@ -118,7 +121,8 @@
     }
 
     &__child-row-eye-icon {
-        color: var(--bold-gray)
+        color: var(--bold-gray);
+        cursor: pointer;     
     }
 
     &__table {
@@ -130,6 +134,7 @@
     &__table td {
         padding: 14px 20px;
         border-radius: 12px;
+        font-weight: 500;
     }
 
     &__chip {

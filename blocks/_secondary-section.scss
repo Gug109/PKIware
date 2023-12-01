@@ -6,6 +6,7 @@
     &__req-count {
         color: var(--bold-gray);
         margin-bottom: 10px;
+        cursor: pointer;
     }
 
     &__req-count i {
@@ -16,6 +17,7 @@
         position: absolute;
         color: var(--bold-gray);
         right: 20px;
+        cursor: pointer;
     }
 
     &__user-info-main-block {
@@ -50,7 +52,7 @@
     }
 
     &__show-user-email-block {
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     &__show-user-link {
@@ -59,6 +61,7 @@
 
     &__show-user-lastname {
         color: var(--bold-gray);
+        margin-top: 20px;
     }
 
     &__show-user-email {
@@ -156,6 +159,7 @@
         color: var(--white);
         border: none;
         box-sizing: border-box;
+        cursor: pointer;
         border-radius: 8px;
     }
     

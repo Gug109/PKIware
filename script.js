@@ -7,7 +7,31 @@ const certificateDetalis = document.querySelectorAll(".section__child-row-eye-ic
 const showUserInfo = document.querySelector(".secondary-section__angel-icon");
 const showUserInfoMainBlock = document.querySelector(".secondary-section__show-user-infos-main-block");
 const renewBtn = document.querySelector(".secondary-section__renew-btn");
+const myCertificate = document.querySelector(".secondary-section__req-count");
+const renewalBlock = document.querySelector(".renewal");
+const renewalCloseBtn = document.querySelector(".renewal__close-icon");
+const renewalCancelBtn = document.querySelector("renewal__cancel-btn");
 secondarySection.style = "display:none";
+
+renewalCloseBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    renewalBlock.style.display = "none";
+})
+
+renewBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    renewalBlock.style.display = "block";
+})
+
+myCertificate.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    mainUl.style = "display:block";
+    secondarySection.style = "display:none";
+    footer.style = "display:block";
+});
 
 showUserInfo.addEventListener('click', (e) => {
     e.preventDefault();
@@ -22,7 +46,6 @@ showUserInfo.addEventListener('click', (e) => {
 certificateDetalis.forEach(element => {
     element.addEventListener('click', () => {
         mainUl.style = "display:none";
-        footer.style = "display:none";
         secondarySection.style = "display:block";
         header.style = "margin-bottom: 0";
         footer.style = "display:block";

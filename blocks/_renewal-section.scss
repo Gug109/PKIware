@@ -1,11 +1,12 @@
 .renewal {
-    margin-left: 330px;
+    margin-left: 530px;
     border-radius: 16px;
+    position: absolute;
     width: 600px;
+    top: 200px;
     display: none;
     background-color: var(--white);
     height: 350px;
-    // position: fixed;
 
     &__renew-block {
         padding: 24px 48px;
