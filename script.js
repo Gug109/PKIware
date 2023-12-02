@@ -11,7 +11,21 @@ const myCertificate = document.querySelector(".secondary-section__req-count");
 const renewalBlock = document.querySelector(".renewal");
 const renewalCloseBtn = document.querySelector(".renewal__close-icon");
 const renewalCancelBtn = document.querySelector("renewal__cancel-btn");
+const renewalSendBtn = document.querySelector(".renewal__renew-btn");
+const renewalTextInp = document.querySelector(".renewal__texts-inp");
 secondarySection.style = "display:none";
+
+renewalSendBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    if (renewalTextInp.value === "") {
+        return;
+    } else {
+        renewalBlock.style.display = "none";
+    }
+
+    renewalTextInp.value = "";
+})
 
 renewalCloseBtn.addEventListener('click', (e) => {
     e.preventDefault();
