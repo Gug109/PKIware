@@ -20,6 +20,10 @@
         cursor: pointer;
     }
 
+    &__show-user-infos-list-parent {
+        display: flex;
+    }
+
     &__user-info-main-block {
         color: var(--black);
         background-color: var(--white);
@@ -31,49 +35,47 @@
     &__user-infos-block {
         display: flex;
         justify-content: space-between;
+        margin-top: 30px;
     }
 
     &__hr {
         margin-top: 20px;
     }
 
-    &__show-user-info-title {
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 30px;
-    }
-
-    &__show-user-name {
-        color: var(--bold-gray);
-    }
-
     &__show-user-infos-main-block {
         display: none;
     }
 
-    &__show-user-email-block {
-        margin-left: 50px;
+    &__vertical {
+        border-left: 1px solid var(--bold-gray);
+      height: 86px;
+      position:absolute;
+      top: 44%;
+      left: 63%;
+
     }
 
-    &__show-user-link {
+    &__about-user-info-block a {
         color: var(--brand-color);
     }
 
-    &__show-user-lastname {
+    &__about-user-info-block {
+        font-size: 14px;
         color: var(--bold-gray);
-        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
-    &__show-user-email {
-        color: var(--bold-gray);
-    }
-
-    &__show-user-phone {
-        color: var(--bold-gray);
-    }
-
-    &__show-user-infos {
+    &__user-info-block-list-parent {
+        width: 100%;
+        margin-right: 120px;
+        display: flex;
         justify-content: space-between;
+    }
+
+    &__user-info-block-name {
+        font-size: 14px;
+        color: var(--bold-gray);
+        margin-bottom: 10px;
     }
 
     &__user-info-block {
@@ -82,6 +84,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__user-info-ul-title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+
+    &__show-user-infos {
+        display: flex;
+        justify-content: space-between;
     }
 
     &__revoce-inp {
@@ -162,7 +176,7 @@
         cursor: pointer;
         border-radius: 8px;
     }
-    
+
     &__user-info-btns-block {
         display: flex;
         margin-bottom: 20px;
@@ -188,13 +202,10 @@
         border-radius: 8px;
     }
 
-    &__show-user-infos {
-        display: flex;
-    }
-
     &__req-detalis-hr {
         border: 0.5px solid var(--gray);
     }
+
 
     &__req-detalis-title {
         font-size: 18px;

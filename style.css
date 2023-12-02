@@ -28,6 +28,7 @@
   background-color: var(--nav-item-bg);
   position: relative;
   margin-bottom: 4px;
+  cursor: pointer;
 }
 .main-nav__list:hover {
   background-color: var(--brand-color);
@@ -193,6 +194,9 @@
   right: 20px;
   cursor: pointer;
 }
+.secondary-section__show-user-infos-list-parent {
+  display: flex;
+}
 .secondary-section__user-info-main-block {
   color: var(--black);
   background-color: var(--white);
@@ -203,39 +207,39 @@
 .secondary-section__user-infos-block {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 .secondary-section__hr {
   margin-top: 20px;
 }
-.secondary-section__show-user-info-title {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 30px;
-}
-.secondary-section__show-user-name {
-  color: var(--bold-gray);
-}
 .secondary-section__show-user-infos-main-block {
   display: none;
 }
-.secondary-section__show-user-email-block {
-  margin-left: 50px;
+.secondary-section__vertical {
+  border-left: 1px solid var(--bold-gray);
+  height: 86px;
+  position: absolute;
+  top: 44%;
+  left: 63%;
 }
-.secondary-section__show-user-link {
+.secondary-section__about-user-info-block a {
   color: var(--brand-color);
 }
-.secondary-section__show-user-lastname {
+.secondary-section__about-user-info-block {
+  font-size: 14px;
   color: var(--bold-gray);
-  margin-top: 20px;
+  margin-bottom: 10px;
 }
-.secondary-section__show-user-email {
-  color: var(--bold-gray);
-}
-.secondary-section__show-user-phone {
-  color: var(--bold-gray);
-}
-.secondary-section__show-user-infos {
+.secondary-section__user-info-block-list-parent {
+  width: 100%;
+  margin-right: 120px;
+  display: flex;
   justify-content: space-between;
+}
+.secondary-section__user-info-block-name {
+  font-size: 14px;
+  color: var(--bold-gray);
+  margin-bottom: 10px;
 }
 .secondary-section__user-info-block {
   font-size: 18px;
@@ -243,6 +247,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.secondary-section__user-info-ul-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.secondary-section__show-user-infos {
+  display: flex;
+  justify-content: space-between;
 }
 .secondary-section__revoce-inp {
   padding: 12px 24px;
@@ -331,9 +344,6 @@
   background-color: var(--white);
   padding: 14px 26px;
   border-radius: 8px;
-}
-.secondary-section__show-user-infos {
-  display: flex;
 }
 .secondary-section__req-detalis-hr {
   border: 0.5px solid var(--gray);
@@ -464,6 +474,7 @@
   background-color: var(--brand-color);
   color: var(--white);
   font-size: 18px;
+  cursor: pointer;
 }
 
 .main {
